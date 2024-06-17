@@ -1,3 +1,64 @@
 % In this file you should put all LaTeX macros to be used
 % both by the pdf version and the web version.
 % This should be most of your macros.
+
+
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{conj}[thm]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{exam}[thm]{Example}
+\newtheorem{fact}[thm]{Fact}
+\newtheorem{ques}[thm]{Question}
+\newtheorem{prob}[thm]{Problem}
+\newtheorem{rmk}[thm]{Remark}
+\theoremstyle{remark}
+
+
+\newcommand\CC{\mathbb{C}}
+\newcommand\ZZ{\mathbb{Z}}
+\newcommand\Spec{\mathcal{S}}
+
+\newcommand\SYT{\operatorname{SYT}}
+\newcommand\Dyck{\operatorname{Dyck}}
+\newcommand\NC{\operatorname{NC}}
+\newcommand\NN{\operatorname{NN}}
+\newcommand\Mat{\operatorname{Mat}}
+\newcommand\Cr{\operatorname{Cr}}
+\newcommand\SL{\operatorname{SL}}
+\newcommand\AC{\operatorname{AC}}
+\newcommand\rlmin{\operatorname{rlmin}}
+\newcommand\cc{\operatorname{c}}
+\newcommand\Web{\operatorname{Web}}
+
+\newcommand\NS{\mathsf{N}}
+\newcommand\ES{\mathsf{E}}
+
+\newcommand\OnlyXmarking[2]
+{\draw[very thick] (#1-0.7,#2-0.7)--(#1-0.3,#2-0.3);
+\draw[very thick] (#1-0.7,#2-0.3)--(#1-0.3,#2-0.7); }
+\newcommand\Xmarking[2]
+{\draw[very thick] (#1-0.7,#2-0.7)--(#1-0.3,#2-0.3);
+\draw[very thick] (#1-0.7,#2-0.3)--(#1-0.3,#2-0.7);
+\draw (#1-1,#2-0.5)--(#1-0.5,#2-0.5);
+\draw (#1-0.5,#2-0.5)--(#1-0.5,#2); }
+\newcommand\Cross[2]
+{\draw (#1-0.5,#2)--(#1-0.5,#2-1);
+\draw (#1,#2-0.5)--(#1-1,#2-0.5); }
+\newcommand\UP[2]{\draw (#1-0.5,#2)--(#1-0.5,#2-1);}
+\newcommand\EAST[2]{\draw (#1,#2-0.5)--(#1-1,#2-0.5);}
+\newcommand\Asmooth[2]
+{\draw (#1,#2-0.5) .. controls (#1-0.45,#2-0.45) and (#1-0.45,#2-0.45) .. (#1-0.5,#2);
+\draw (#1-1,#2-0.5) .. controls (#1-0.55,#2-0.55) and (#1-0.55,#2-0.55) .. (#1-0.5,#2-1); }
+\newcommand\Bsmooth[2]
+{\draw (#1-1,#2-0.5) .. controls (#1-0.55,#2-0.45) and (#1-0.55,#2-0.45) .. (#1-0.5,#2);
+\draw (#1,#2-0.5) .. controls (#1-0.45,#2-0.55) and (#1-0.45,#2-0.55) .. (#1-0.5,#2-1); }
+\newcommand\Matching[2]{\draw (#1,0) to [out=55,in=125] (#2,0);}
+
+\newcommand\SYM{\mathfrak{S}}
+
+\newcommand\qand{\quad\mbox{and}\quad}
